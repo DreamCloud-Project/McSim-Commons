@@ -1,8 +1,7 @@
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableClass.h"
-
-#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesConstantInstruction.h"
-#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesConstantInstruction.h"
-#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesDeviationInstruction.h"
+#include "AmRunnableClass.h"
+#include "dcExecutionCyclesConstantInstruction.h"
+#include "dcExecutionCyclesConstantInstruction.h"
+#include "dcExecutionCyclesDeviationInstruction.h"
 
 namespace DCApplication {
 AmRunnableClass::AmRunnableClass(string NameIn) :

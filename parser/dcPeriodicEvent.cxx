@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcPeriodicEvent.h"
+#include "dcPeriodicEvent.h"
 
 namespace DCApplication
 {

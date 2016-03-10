@@ -8,7 +8,7 @@
 #ifndef DCMAPPING_HEURISTICZIGZAGTHREECORE_HXX_
 #define DCMAPPING_HEURISTICZIGZAGTHREECORE_HXX_
 
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
+#include "dcMappingHeuristicI.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

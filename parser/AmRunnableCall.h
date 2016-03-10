@@ -1,7 +1,7 @@
 #ifndef AM_RUNNABLE_CALL_H
 #define AM_RUNNABLE_CALL_H
 
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableClass.h"
+#include "AmRunnableClass.h"
 
 namespace DCApplication {
 

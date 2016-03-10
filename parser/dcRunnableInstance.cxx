@@ -5,9 +5,8 @@
  *      Author: manu
  */
 
-#include "../../../Platform_Src/simulators-commons/parser/dcRunnableInstance.h"
-
-#include "../../../Platform_Src/simulators-commons/parser/dcTask.h"
+#include "dcRunnableInstance.h"
+#include "dcTask.h"
 
 namespace DCApplication {
 

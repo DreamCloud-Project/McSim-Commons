@@ -7,7 +7,7 @@
 #ifndef MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_ZIGZAG_HXX_
 #define MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_ZIGZAG_HXX_
 
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
+#include "dcMappingHeuristicI.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

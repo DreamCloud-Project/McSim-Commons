@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcCoreType.h"
+#include "dcCoreType.h"
 
 
 namespace DCApplication

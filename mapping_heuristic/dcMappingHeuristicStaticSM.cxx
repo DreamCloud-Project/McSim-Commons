@@ -4,7 +4,7 @@
  *  Created on: Sep 17, 2015
  *      Author: manu
  */
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicStaticSM.hxx"
+#include "dcMappingHeuristicStaticSM.hxx"
 
 #include <fstream>
 #include <sstream>

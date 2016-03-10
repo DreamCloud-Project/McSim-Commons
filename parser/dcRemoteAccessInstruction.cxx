@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcRemoteAccessInstruction.h"
+#include "dcRemoteAccessInstruction.h"
 
 
 namespace DCApplication

@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcQuartz.h"
+#include "dcQuartz.h"
 
 
 namespace DCApplication

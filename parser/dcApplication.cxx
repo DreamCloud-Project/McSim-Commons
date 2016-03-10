@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcApplication.h"
+#include "dcApplication.h"
 
 #include <queue>
 #include <iostream>
@@ -17,8 +17,8 @@
 #include <sstream>
 #include <set>
 
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableCall.h"
-#include "../../../Platform_Src/simulators-commons/utils/Math.hxx"
+#include "AmRunnableCall.h"
+#include "../utils/Math.hxx"
 
 using namespace std;
 

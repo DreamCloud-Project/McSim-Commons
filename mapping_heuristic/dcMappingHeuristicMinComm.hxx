@@ -9,8 +9,8 @@
 
 #include <map>
 
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
-#include "../../../Platform_Src/simulators-commons/parser/dcRunnableCall.h"
+#include "dcMappingHeuristicI.hxx"
+#include "../parser/dcRunnableCall.h"
 
 namespace dreamcloud {
 namespace platform_sclib {

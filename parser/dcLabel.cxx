@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcLabel.h"
+#include "dcLabel.h"
 
 
 namespace DCApplication

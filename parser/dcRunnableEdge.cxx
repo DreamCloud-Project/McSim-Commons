@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcRunnableEdge.h"
+#include "dcRunnableEdge.h"
 
 namespace DCApplication
 {

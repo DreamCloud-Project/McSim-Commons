@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcTag.h"
+#include "dcTag.h"
 
 namespace DCApplication
 {

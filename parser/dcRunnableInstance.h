@@ -8,7 +8,7 @@
 #ifndef SRC_PLATFORM_SRC_SRC_CXX_MODULES_DREAMCLOUD_PLATFORM_SCLIB_PARSER_DCRUNNABLEINSTANCE_H_
 #define SRC_PLATFORM_SRC_SRC_CXX_MODULES_DREAMCLOUD_PLATFORM_SCLIB_PARSER_DCRUNNABLEINSTANCE_H_
 
-#include "../../../Platform_Src/simulators-commons/parser/dcRunnableCall.h"
+#include "dcRunnableCall.h"
 
 namespace DCApplication {
 

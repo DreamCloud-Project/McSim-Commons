@@ -10,7 +10,7 @@
 #include <vector>
 #include <random>
 
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
+#include "dcMappingHeuristicI.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

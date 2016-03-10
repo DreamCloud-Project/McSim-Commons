@@ -1,6 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
-
-
+#include "dcInstruction.h"
 
 namespace DCApplication
 {

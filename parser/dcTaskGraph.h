@@ -1,7 +1,7 @@
 #ifndef dcTaskGraph_H_
 #define dcTaskGraph_H_
 
-#include "../../../Platform_Src/simulators-commons/parser/dcTask.h"
+#include "dcTask.h"
 
 namespace DCApplication{
 	using namespace std;

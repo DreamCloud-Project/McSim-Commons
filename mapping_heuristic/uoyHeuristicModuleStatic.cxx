@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/uoyHeuristicModuleStatic.hxx"
+#include "uoyHeuristicModuleStatic.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

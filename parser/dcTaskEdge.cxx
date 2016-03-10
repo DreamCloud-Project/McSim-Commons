@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcTaskEdge.h"
+#include "dcTaskEdge.h"
 
 namespace DCApplication
 {

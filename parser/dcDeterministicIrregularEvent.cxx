@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcDeterministicIrregularEvent.h"
+#include "dcDeterministicIrregularEvent.h"
 
 namespace DCApplication
 {

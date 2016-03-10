@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcVariableRunnableExecTime.h"
+#include "dcVariableRunnableExecTime.h"
 
 namespace DCApplication
 {

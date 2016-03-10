@@ -10,7 +10,7 @@
 #include <iostream>
 #include <random>
 
-#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
+#include "dcMappingHeuristicI.hxx"
 
 using namespace std;
 

@@ -1,7 +1,5 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesConstantInstruction.h"
-
-#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
-
+#include "dcExecutionCyclesConstantInstruction.h"
+#include "dcInstruction.h"
 
 namespace DCApplication
 {

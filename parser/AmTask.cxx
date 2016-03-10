@@ -1,7 +1,6 @@
-#include "../../../Platform_Src/simulators-commons/parser/AmTask.h"
-
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableCall.h"
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableCall.h"
+#include "AmTask.h"
+#include "AmRunnableCall.h"
+#include "AmRunnableCall.h"
 
 namespace DCApplication
 {

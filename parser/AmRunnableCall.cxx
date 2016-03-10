@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableCall.h"
+#include "AmRunnableCall.h"
 
 namespace DCApplication {
 

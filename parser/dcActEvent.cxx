@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcActEvent.h"
+#include "dcActEvent.h"
 
 namespace DCApplication
 {

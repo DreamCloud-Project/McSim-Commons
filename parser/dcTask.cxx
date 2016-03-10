@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcTask.h"
+#include "dcTask.h"
 
 
 namespace DCApplication

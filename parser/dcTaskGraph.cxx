@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcTaskGraph.h"
+#include "dcTaskGraph.h"
 
 namespace DCApplication
 {	using namespace std;

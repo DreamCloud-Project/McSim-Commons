@@ -4,8 +4,8 @@
 #include <iostream>
 #include <list>
 
-#include "../../../Platform_Src/simulators-commons/parser/dcCoreType.h"
-#include "../../../Platform_Src/simulators-commons/parser/dcQuartz.h"
+#include "dcCoreType.h"
+#include "dcQuartz.h"
 
 namespace DCApplication
 {

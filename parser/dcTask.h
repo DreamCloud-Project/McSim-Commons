@@ -10,11 +10,10 @@
 #include <iostream>
 #include <vector>
 
-#include "../../../Platform_Src/simulators-commons/parser/AmRunnableClass.h"
-#include "../../../Platform_Src/simulators-commons/parser/dcActEvent.h"
-#include "../../../Platform_Src/simulators-commons/parser/dcCore.h"
-#include "../../../Platform_Src/simulators-commons/parser/dcTag.h"
-
+#include "AmRunnableClass.h"
+#include "dcActEvent.h"
+#include "dcCore.h"
+#include "dcTag.h"
 
 namespace DCApplication{
 	using namespace std;

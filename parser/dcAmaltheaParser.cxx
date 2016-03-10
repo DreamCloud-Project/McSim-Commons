@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcAmaltheaParser.h"
+#include "dcAmaltheaParser.h"
 
 #include <string>
 #include <iostream>

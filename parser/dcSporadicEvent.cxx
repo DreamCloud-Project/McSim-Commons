@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcSporadicEvent.h"
+#include "dcSporadicEvent.h"
 
 
 namespace DCApplication

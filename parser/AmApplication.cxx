@@ -1,4 +1,4 @@
-#include "../../../Platform_Src/simulators-commons/parser/AmApplication.h"
+#include "AmApplication.h"
 
 #include <iostream>
 #include <string>

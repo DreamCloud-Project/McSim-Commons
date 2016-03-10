@@ -1,6 +1,5 @@
-#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesDeviationInstruction.h"
-
-#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
+#include "dcExecutionCyclesDeviationInstruction.h"
+#include "dcInstruction.h"
 
 namespace DCApplication {
 dcExecutionCyclesDeviationInstruction::dcExecutionCyclesDeviationInstruction(
