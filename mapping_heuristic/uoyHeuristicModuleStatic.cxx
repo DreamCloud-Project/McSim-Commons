@@ -128,8 +128,11 @@ void uoyHeuristicModuleStatic::ParseModeFile(const string& strDirectory,
 		while (inFile.good()) {
 			getline(inFile, Line);
 			if (regex_match(Line, res, rx)) {
-				RunnableName = boost::lexical_cast<string>(res[1]);
-				TargetCoreIndex = boost::lexical_cast<int>(res[2]);
+				std::ssub_match sub_match1 = res[1];
+				RunnableName = sub_match1.str();
+				std::ssub_match sub_match2 = res[2];
+				string TargetCoreIndexStr = sub_match2.str();
+				TargetCoreIndex = std::stoi(TargetCoreIndexStr);
 				AddMapForRunnableInModeItem(Mode, RunnableName,
 						TargetCoreIndex);
 			} else {
@@ -164,13 +167,17 @@ void uoyHeuristicModuleStatic::ParseModeChangeTiming(
 			getline(inFile, Line);
 
 			if (regex_match(Line, res, rx)) {
-				PreviousModeName = boost::lexical_cast<string>(res[1]);
-				NextModeName = boost::lexical_cast<string>(res[2]);
-				TransitionTime = boost::lexical_cast<int>(res[3]);
-				TransitionUnit = boost::lexical_cast<string>(res[4]);
+				std::ssub_match sub_match1 = res[1];
+				PreviousModeName = sub_match1.str();
+				std::ssub_match sub_match2 = res[2];
+				NextModeName = sub_match2.str();
+				std::ssub_match sub_match3 = res[3];
+				string TransitionTimeStr = sub_match3.str();
+				TransitionTime = std::stoi(TransitionTimeStr);
+				std::ssub_match sub_match4 = res[4];
+				TransitionUnit = sub_match4.str();
 				AddModeTransitionTimeFromSourceToDestItem(PreviousModeName,
 						NextModeName, TransitionTime, TransitionUnit);
-
 			} else {
 				if (Line.length() > 0) {
 					cerr << "Syntax error" << std::endl << std::endl;

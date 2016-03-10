@@ -7,7 +7,6 @@
 #include <vector>
 #include <map>
 #include <regex>
-#include <boost/lexical_cast.hpp>
 #include "dcMappingHeuristicI.hxx"
 
 namespace dreamcloud {

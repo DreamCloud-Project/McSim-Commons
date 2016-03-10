@@ -1,6 +1,6 @@
 #include "dcApplication.h"
 #include "AmRunnableCall.h"
-#include "../../utilities_clib/Math.hxx"
+#include "../utils/Math.hxx"
 #include <queue>
 #include <iostream>
 #include <ratio>
@@ -2181,8 +2181,8 @@ void dcApplication::dumpRunnablesToFiles(dcTaskGraph* dcTaskGraphIn,
 				<< (label_access_count)))->str();
 		string Packets = static_cast<ostringstream*>(&(ostringstream()
 				<< (packets)))->str();
-		string exeInstS = Runnable_Id + " " + Runnable_Name + " " + Inst_str + " " + Label_str + " "
-				+ Packets + "\n";
+		string exeInstS = Runnable_Id + " " + Runnable_Name + " " + Inst_str
+				+ " " + Label_str + " " + Packets + "\n";
 		const char* exeInstS_const = exeInstS.c_str();
 		fputs(exeInstS_const, exeInst);
 	}
@@ -2538,11 +2538,8 @@ unsigned long int dcApplication::GetHyperPeriodWithOffset(dcTaskGraph* graph) {
 			maxOffset = periodicRunnables.at(i)->GetOffsetInNano();
 		}
 	}
-//	for (auto i = periods.begin(); i != periods.end(); ++i)
-//	    std::cout << *i << ' ';
-//	cout << " ==> hyper period = " << std::accumulate(periods.begin(), periods.end(), 1, dreamcloud::utilities_clib::Math::lcm);;
 	unsigned long int hyperPeriod = std::accumulate(periods.begin(),
-			periods.end(), 1, dreamcloud::utilities_clib::Math::lcm);
+			periods.end(), 1, lcm);
 	return hyperPeriod + maxOffset;
 }
 
