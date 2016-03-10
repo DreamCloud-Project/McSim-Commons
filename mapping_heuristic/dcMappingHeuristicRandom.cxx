@@ -4,7 +4,8 @@
  *  Created on: Sep 17, 2015
  *      Author: manu
  */
-#include "dcMappingHeuristicRandom.hxx"
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicRandom.hxx"
+
 #include <string.h>
 #include <fstream>
 #include <sstream>

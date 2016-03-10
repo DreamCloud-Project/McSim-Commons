@@ -5,7 +5,7 @@
  *      Author: effiong
  */
 
-#include "dcMappingHeuristicZigZagSM.hxx"
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicZigZagSM.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

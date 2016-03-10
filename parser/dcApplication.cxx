@@ -1,6 +1,5 @@
-#include "dcApplication.h"
-#include "AmRunnableCall.h"
-#include "../utils/Math.hxx"
+#include "../../../Platform_Src/simulators-commons/parser/dcApplication.h"
+
 #include <queue>
 #include <iostream>
 #include <ratio>
@@ -17,6 +16,9 @@
 #include <string>
 #include <sstream>
 #include <set>
+
+#include "../../../Platform_Src/simulators-commons/parser/AmRunnableCall.h"
+#include "../../../Platform_Src/simulators-commons/utils/Math.hxx"
 
 using namespace std;
 

@@ -4,7 +4,8 @@
  *  Created on: Sep 17, 2015
  *      Author: manu
  */
-#include "dcMappingHeuristicKhalidDC.hxx"
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicKhalidDC.hxx"
+
 #include <iostream>
 
 namespace dreamcloud {

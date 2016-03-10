@@ -4,7 +4,8 @@
  *  Created on: Sep 17, 2015
  *      Author: manu
  */
-#include "dcMappingHeuristicMinComm.hxx"
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicMinComm.hxx"
+
 #include <iostream>
 
 using namespace std;

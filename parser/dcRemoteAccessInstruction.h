@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include <list>
-#include "dcInstruction.h"
-#include "dcLabel.h"
+
+#include "../../../platform/simulators-commons/parser/dcInstruction.h"
+#include "../../../platform/simulators-commons/parser/dcLabel.h"
 
 namespace DCApplication
 {

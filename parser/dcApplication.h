@@ -1,13 +1,13 @@
 #ifndef MYGRAPH_H_
 #define MYGRAPH_H_
 
-#include "dcRunnableCall.h"
-#include "dcTask.h"
-#include "dcTaskEdge.h"
-#include "dcTaskGraph.h"
-#include "AmTask.h"
-#include "AmApplication.h"
-#include "dcRunnableEdge.h"
+#include "../../../platform/simulators-commons/parser/AmApplication.h"
+#include "../../../platform/simulators-commons/parser/AmTask.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRunnableCall.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRunnableEdge.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcTask.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcTaskEdge.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcTaskGraph.h"
 
 namespace DCApplication {
 

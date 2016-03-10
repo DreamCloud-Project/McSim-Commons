@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <list>
-#include "dcActEvent.h"
+
+#include "../../../platform/simulators-commons/parser/dcActEvent.h"
 
 namespace DCApplication
 {

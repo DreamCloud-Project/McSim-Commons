@@ -1,4 +1,4 @@
-#include "dcMicrocontroller.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcMicrocontroller.h"
 
 namespace DCApplication
 {

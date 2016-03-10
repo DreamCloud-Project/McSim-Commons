@@ -7,9 +7,10 @@
 #ifndef MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_RANDOMFIXED_HXX_
 #define MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_RANDOMFIXED_HXX_
 
-#include "dcMappingHeuristicI.hxx"
 #include <iostream>
 #include <random>
+
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
 
 using namespace std;
 

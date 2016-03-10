@@ -8,8 +8,9 @@
 #define MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_MINCOM_HXX_
 
 #include <map>
-#include "dcMappingHeuristicI.hxx"
-#include "../parser/dcRunnableCall.h"
+
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
+#include "../../../Platform_Src/simulators-commons/parser/dcRunnableCall.h"
 
 namespace dreamcloud {
 namespace platform_sclib {

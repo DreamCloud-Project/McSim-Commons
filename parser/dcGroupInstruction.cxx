@@ -1,5 +1,6 @@
-#include "dcGroupInstruction.h"
-#include "dcInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcGroupInstruction.h"
+
+#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
 
 
 namespace DCApplication

@@ -4,14 +4,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "dcInstruction.h"
-#include "dcRemoteAccessInstruction.h"
-#include "dcTag.h"
-#include "dcRunnableExecutionTime.h"
-#include "dcActEvent.h"
-#include "dcRunnableEdge.h"
-#include "dcPeriodicEvent.h"
-#include "dcSporadicEvent.h"
+
+#include "../../../Platform_Src/simulators-commons/parser/dcActEvent.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcPeriodicEvent.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRemoteAccessInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRunnableEdge.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRunnableExecutionTime.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcSporadicEvent.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcTag.h"
 
 namespace DCApplication {
 using namespace std;

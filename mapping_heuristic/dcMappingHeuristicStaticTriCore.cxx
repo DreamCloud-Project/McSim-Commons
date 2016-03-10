@@ -4,7 +4,8 @@
  *  Created on: Sep 17, 2015
  *      Author: manu
  */
-#include "dcMappingHeuristicStaticTriCore.hxx"
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicStaticTriCore.hxx"
+
 #include <fstream>
 #include <sstream>
 #include <systemc.h>

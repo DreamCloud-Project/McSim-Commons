@@ -7,8 +7,9 @@
 #ifndef MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_STATICSM_HXX_
 #define MODULES_DREAMCLOUD_PLATFORM_SCLIB_MAPPING_HEURISTIC_STATICSM_HXX_
 
-#include "dcMappingHeuristicI.hxx"
 #include <vector>
+
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicI.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

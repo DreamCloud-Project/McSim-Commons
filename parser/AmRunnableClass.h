@@ -4,9 +4,10 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "dcInstruction.h"
-#include "dcTag.h"
-#include "dcRunnableExecutionTime.h"
+
+#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRunnableExecutionTime.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcTag.h"
 
 
 namespace DCApplication

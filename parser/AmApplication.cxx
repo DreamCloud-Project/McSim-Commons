@@ -1,7 +1,8 @@
+#include "../../../Platform_Src/simulators-commons/parser/AmApplication.h"
+
 #include <iostream>
 #include <string>
 
-#include "AmApplication.h"
 
 namespace DCApplication{
 

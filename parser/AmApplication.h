@@ -1,25 +1,26 @@
 #ifndef AmApplication_H
 #define AmApplication_H
 
-#include "AmRunnableClass.h"
 #include <iostream>
 #include <vector>
 #include <map>
-#include "AmTask.h"
-#include "dcActEvent.h"
-#include "dcLabel.h"
-#include "dcQuartz.h"
-#include "dcCore.h"
-#include "dcCoreType.h"
-#include "dcMicrocontroller.h"
-#include "dcTag.h"
-#include "dcRemoteAccessInstruction.h"
-#include "dcInstruction.h"
-#include "dcExecutionCyclesConstantInstruction.h"
-#include "dcExecutionCyclesDeviationInstruction.h"
-#include "dcDeterministicIrregularEvent.h"
-#include "dcFixedRunnableExecTime.h"
-#include "dcGroupInstruction.h"
+
+#include "../../../platform/simulators-commons/parser/dcInstruction.h"
+#include "../../../platform/simulators-commons/parser/dcTag.h"
+#include "../../../Platform_Src/simulators-commons/parser/AmRunnableClass.h"
+#include "../../../Platform_Src/simulators-commons/parser/AmTask.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcActEvent.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcCore.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcCoreType.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcDeterministicIrregularEvent.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesConstantInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcExecutionCyclesDeviationInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcFixedRunnableExecTime.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcGroupInstruction.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcLabel.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcMicrocontroller.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcQuartz.h"
+#include "../../../Platform_Src/simulators-commons/parser/dcRemoteAccessInstruction.h"
 
 
 namespace DCApplication{

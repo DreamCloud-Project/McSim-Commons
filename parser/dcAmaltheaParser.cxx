@@ -1,3 +1,5 @@
+#include "../../../Platform_Src/simulators-commons/parser/dcAmaltheaParser.h"
+
 #include <string>
 #include <iostream>
 #include <sstream>
@@ -10,7 +12,6 @@
 #include <time.h> 
 #include <stdlib.h>
 
-#include "dcAmaltheaParser.h"
 
 using namespace xercesc;
 using namespace DCApplication;

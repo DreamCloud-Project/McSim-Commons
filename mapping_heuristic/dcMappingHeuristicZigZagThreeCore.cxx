@@ -4,7 +4,7 @@
  *  Created on: Sep 17, 2015
  *      Author: manu
  */
-#include "dcMappingHeuristicZigZagThreeCore.hxx"
+#include "../../../Platform_Src/simulators-commons/mapping_heuristic/dcMappingHeuristicZigZagThreeCore.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <list>
-#include "dcInstruction.h"
+
+#include "../../../Platform_Src/simulators-commons/parser/dcInstruction.h"
 
 namespace DCApplication
 {
