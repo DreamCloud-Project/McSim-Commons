@@ -6,8 +6,7 @@
 #include <iostream>
 #include <list>
 
-#include "../../../platform/simulators-commons/parser/dcActEvent.h"
-#include "../../../platform/simulators-commons/parser/dcActEvent.h"
+#include "./dcActEvent.h"
 
 namespace DCApplication
 {

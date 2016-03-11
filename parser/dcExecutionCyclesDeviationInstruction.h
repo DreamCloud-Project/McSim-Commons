@@ -4,7 +4,7 @@
 #include <iostream>
 #include <list>
 #include <vector>
-#include "../../../platform/simulators-commons/parser/dcInstruction.h"
+#include "./dcInstruction.h"
 
 
 namespace DCApplication
