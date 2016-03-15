@@ -7,4 +7,4 @@ This software is made available under the  GNU Lesser General Public License v3.
 
 Report bugs at: mcsim-support@lirmm.fr  
 
-(C)2015 CNRS LIRMM / Université de Montpellier
+(C)2016 CNRS and Université de Montpellier
