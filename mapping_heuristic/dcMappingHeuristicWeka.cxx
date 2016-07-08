@@ -6,9 +6,10 @@
  */
 #include "dcMappingHeuristicWeka.hxx"
 
+#include <algorithm>
+#include <iostream>
 #include <fstream>
 #include <sstream>
-#include <systemc.h>
 
 namespace dreamcloud {
 namespace platform_sclib {

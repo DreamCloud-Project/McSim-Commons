@@ -8,7 +8,6 @@
 
 #include <fstream>
 #include <sstream>
-#include <systemc.h>
 
 namespace dreamcloud {
 namespace platform_sclib {
