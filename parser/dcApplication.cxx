@@ -324,13 +324,13 @@ void dcApplication::AddRunnables(dcTaskGraph* dcTaskGraph,
 					if (runDest.size() > 0) {
 						dcRunCall->SetRunClassNameDestinations(runDest);
 					}
-					if (curDctask->GetRunnableCalls() == 0) {
+					if (curDctask->GetTaskRunnableCalls() == 0) {
 						curDctask->SetRunnables(dcRunCall);
-						curDctask->GetRunnableCalls()->SetTail(dcRunCall);
+						curDctask->GetTaskRunnableCalls()->SetTail(dcRunCall);
 					} else {
-						curDctask->GetRunnableCalls()->GetTail()->SetNext(
+						curDctask->GetTaskRunnableCalls()->GetTail()->SetNext(
 								dcRunCall);
-						curDctask->GetRunnableCalls()->SetTail(dcRunCall);
+						curDctask->GetTaskRunnableCalls()->SetTail(dcRunCall);
 					}
 				}
 			}
@@ -363,7 +363,7 @@ vector<dcRunnableCall*> dcApplication::GetTaskRunnableCalls(
 			cout << "Task :" << MyTask->GetName()
 					<< " not found in dcApplication " << endl;
 		} else {
-			dcRunnableCall* runCall = MyTask->GetRunnableCalls();
+			dcRunnableCall* runCall = MyTask->GetTaskRunnableCalls();
 			while (runCall != NULL) {
 				runnableCalls.push_back(runCall);
 				runCall = runCall->GetNext();
@@ -377,13 +377,15 @@ vector<dcRunnableCall*> dcApplication::GetRunnableCall(dcTask* task,
 		string runClassId) {
 
 	vector<dcRunnableCall*> result;
-	dcRunnableCall* runCall = task->GetRunnableCalls();
-	while (runCall != NULL) {
-		if (runCall->GetRunClassId() == runClassId) {
-			result.push_back(runCall);
-		} else {
+	while (task != NULL) {
+		dcRunnableCall* runCall = task->GetTaskRunnableCalls();
+		while (runCall != NULL) {
+			if (runCall->GetRunClassId() == runClassId) {
+				result.push_back(runCall);
+			}
 			runCall = runCall->GetNext();
 		}
+		task = task->GetNext();
 	}
 	return result;
 }
@@ -411,7 +413,7 @@ vector<dcRunnableCall*> dcApplication::GetAllRunnables(
 		cout << "No tasks in the dcApplication :(" << endl;
 	} else {
 		while (MyTask != 0) {
-			dcRunnableCall* MyRunnables = MyTask->GetRunnableCalls();
+			dcRunnableCall* MyRunnables = MyTask->GetTaskRunnableCalls();
 			while (MyRunnables != NULL) {
 				MyRunnableReturn.push_back(MyRunnables);
 				MyRunnables = MyRunnables->GetNext();
@@ -427,7 +429,7 @@ vector<dcInstruction*> dcApplication::GetAllInstructions(
 	dcTask* task = dcTaskGraphIn->GetHead();
 	vector<dcInstruction*> insts;
 	while (task != 0) {
-		dcRunnableCall* runnable = task->GetRunnableCalls();
+		dcRunnableCall* runnable = task->GetTaskRunnableCalls();
 		while (runnable != NULL) {
 			vector<dcInstruction*> toAdd = runnable->GetAllInstructions();
 			insts.insert(insts.end(), toAdd.begin(), toAdd.end());
@@ -442,12 +444,13 @@ void dcApplication::AdddcRunnableEdges(dcTaskGraph* dcTaskGraphIn,
 		bool seqDep) {
 
 	dcTask* task = dcTaskGraphIn->GetHead();
+	dcTask* headTask = task;
 	if (task == 0) {
 		cout << "No Tasks in the dcApplication, cannot add runnables" << endl;
 	} else {
 		while (task != NULL) {
 
-			dcRunnableCall* run = task->GetRunnableCalls();
+			dcRunnableCall* run = task->GetTaskRunnableCalls();
 			dcRunnableCall* prevRun = NULL;
 			while (run != NULL) {
 
@@ -461,13 +464,11 @@ void dcApplication::AdddcRunnableEdges(dcTaskGraph* dcTaskGraphIn,
 					dcRunnableEdge* backEdge = new dcRunnableEdge();
 					backEdge->SetType(0);
 
-					// Assert destination runnable call is in the same task
-					// than source runnable call and assert there is only
-					// a single runnable call with this run class name
+					// Assert there is only a single runnable call with this run class name
 					// in the current task
 					string destRunClassName =
 							run->GetRunClassNameDestinations().at(i);
-					vector<dcRunnableCall*> destRunCalls = GetRunnableCall(task,
+					vector<dcRunnableCall*> destRunCalls = GetRunnableCall(headTask,
 							destRunClassName);
 					if (destRunCalls.empty()) {
 						cerr
@@ -600,7 +601,7 @@ vector<dcRunnableCall*> dcApplication::GetdcRunnableEdges(
 			cout << "Task: " << MyTask->GetName()
 					<< " is not in the dcApplication " << endl;
 		} else {
-			dcRunnableCall* MyRunnables = MyTask->GetRunnableCalls();
+			dcRunnableCall* MyRunnables = MyTask->GetTaskRunnableCalls();
 			while (MyRunnables != NULL) {
 				if (MyRunnables->GetRunClassId()
 						== RunnableIn->GetRunClassId()) {
@@ -965,7 +966,7 @@ void dcApplication::dumpTaskAndRunnableGraphFile(string file,
 		dcGraphDotFile << "\t\tcolor=" << color << ";" << endl;
 		dcGraphDotFile << "\t\tlabel=<<font color=\"" << color << "\">"
 				<< (*it)->GetName() << period.str() << "</font>>;" << endl;
-		dcRunnableCall *run = (*it)->GetRunnableCalls();
+		dcRunnableCall *run = (*it)->GetTaskRunnableCalls();
 		while (run != NULL) {
 			dcGraphDotFile << "\t\t" << run->GetRunClassName();
 			dcGraphDotFile << "[label=\"";
@@ -998,7 +999,7 @@ vector<dcRunnableCall*> dcApplication::GetIndependentNonPeriodicRunnables(
 		cout << "No tasks in the dcApplication :(" << endl;
 	} else {
 		while (MyTask != 0) {
-			dcRunnableCall* MyRunnables = MyTask->GetRunnableCalls();
+			dcRunnableCall* MyRunnables = MyTask->GetTaskRunnableCalls();
 			while (MyRunnables != NULL) {
 				if (MyRunnables->GetPeriodInNano() == 0) {
 					dcRunnableEdge* MyRunEdges = MyRunnables->GetEdges();
@@ -1030,7 +1031,7 @@ vector<dcRunnableCall*> dcApplication::GetIndependentRunnables(
 		cout << "No tasks in the dcApplication :(" << endl;
 	} else {
 		while (MyTask != 0) {
-			dcRunnableCall* MyRunnables = MyTask->GetRunnableCalls();
+			dcRunnableCall* MyRunnables = MyTask->GetTaskRunnableCalls();
 			while (MyRunnables != NULL) {
 				dcRunnableEdge* MyRunEdges = MyRunnables->GetEdges();
 				bool isIndependent = true;
@@ -1060,7 +1061,7 @@ vector<dcRunnableCall*> dcApplication::GetPeriodicAndSporadicRunnables(
 		cout << "No tasks in the dcApplication :(" << endl;
 	} else {
 		while (task != 0) {
-			dcRunnableCall* runnable = task->GetRunnableCalls();
+			dcRunnableCall* runnable = task->GetTaskRunnableCalls();
 			while (runnable != NULL) {
 				dcActEvent* event = runnable->GetActEvent();
 				if (event != NULL) {

@@ -31,7 +31,7 @@ namespace DCApplication
 		return Next;
 	}
 
-	dcRunnableCall* dcTask::GetRunnableCalls(){
+	dcRunnableCall* dcTask::GetTaskRunnableCalls(){
 		return Runnables;
 	}
 

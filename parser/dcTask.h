@@ -30,7 +30,7 @@ namespace DCApplication{
 			void SetNext(dcTask *NextIn);
 			dcTask* GetNext();
 			void SetRunnables(dcRunnableCall* RunnableIn);
-			dcRunnableCall* GetRunnableCalls();
+			dcRunnableCall* GetTaskRunnableCalls();
 			void SetVisited(bool visitedIn);
 			bool GetVisited();
 			void SetTag(dcTag* tagIn);

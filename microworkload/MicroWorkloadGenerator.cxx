@@ -84,7 +84,7 @@ dcTask* dcMwGenerator::MwClone(dcTask* TaskIn) {
 	Task->SetTaskID(counter);
 	Task->SetEdges(NULL);
 	Task->SetNext(NULL);
-	Task->SetRunnables(TaskIn->GetRunnableCalls());
+	Task->SetRunnables(TaskIn->GetTaskRunnableCalls());
 	counter++;
 	return Task;
 }
