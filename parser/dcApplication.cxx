@@ -962,6 +962,9 @@ void dcApplication::dumpTaskAndRunnableGraphFile(string file,
 				color = "black";
 				period << "Non periodic";
 			}
+		} else {
+			color = "black";
+			period << "Non periodic";
 		}
 		dcGraphDotFile << "\t\tcolor=" << color << ";" << endl;
 		dcGraphDotFile << "\t\tlabel=<<font color=\"" << color << "\">"
